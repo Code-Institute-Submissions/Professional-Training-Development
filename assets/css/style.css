@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Bebas+Neue&display=swap');
+
+/*
+Using GaffCo Consulting Font: Bebas Neue (will use Open Sans and/or Raleway too)
+
+Using GaffCo Consulting Logo Colours
+    Orange: PMS 715 C / CMYK 0 54 93 0 / rgb(255, 117, 18) / #ff7512
+    Blue: PMS 2995 C / CMYK 81 12 1 0 / rgb(48, 224) / #30e0fc
+    Grey: 40% Black / RGB (153, 153, 153) / #999999
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* === Font Definitions === */
+header {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Raleway' sans-serif;
+    /* Padding to Body to prevent the content to go underneath the Fixed Navigation and Footer. Idea taken from TutorialRepublic (see README.md for details). */
+}
+
+/* === Main Grid Structure  === */
+
+/* === Fixed Header (Navigation) and Footer with Scrollable Body === */
+.container{
+    width: 100%;
+    /* Center the DIV horizontally */
+    /* margin: 0 auto; */
+}
+
+/* --- Placing additonal Body elements here for clarity. --- */
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.fixed-navigation, .fixed-footer{
+    width: 100%;
+    position: fixed;
+    background: #999999;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+/* --- Fixes the Navigation to the top (no scrolling). --- */
+.fixed-navigation {
+    top: 0;
+}
+
+/* --- Fixes the Footer to the bottom (no scrolling). --- */
+.fixed-footer {
+    bottom: 0;
+}    
+
+/* ---  Making the Navigation Links visible against the #999999 (grey) background of the Fixed Navigation --- */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
