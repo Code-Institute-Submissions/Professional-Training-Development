@@ -2,13 +2,19 @@
 
 /*
 Using GaffCo Consulting Font: Bebas Neue (will use Open Sans and/or Raleway too)
-
-Using GaffCo Consulting Logo Colours
-    Orange: PMS 715 C / CMYK 0 54 93 0 / rgb(255, 117, 18) / #ff7512
-    Blue: PMS 2995 C / CMYK 81 12 1 0 / rgb(48, 224) / #30e0fc
-    Grey: 40% Black / RGB (153, 153, 153) / #999999
 */
 
+/* CORE STYLES */
+
+/* === Style Variables: Colours and Hamburger Menu-speed === */
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(13, 110, 139 , 0.75);
+  --main-font-color: #ffffff;
+  --menu-speed: 0.75s;
+}
+
+/* --- "Reset!"  --- */
 * {
     margin: 0;
     padding: 0;
@@ -16,53 +22,105 @@ Using GaffCo Consulting Logo Colours
     box-sizing: border-box;
 }
 
-/* === Font Definitions === */
-header {
-    font-family: 'Open Sans', sans-serif;
-}
-
 body {
-    font-family: 'Raleway' sans-serif;
-    /* Padding to Body to prevent the content to go underneath the Fixed Navigation and Footer. Idea taken from TutorialRepublic (see README.md for details). */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
-/* === Main Grid Structure  === */
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
 
-/* === Fixed Header (Navigation) and Footer with Scrollable Body === */
-.container{
+.showcase {
+  color: #ffffff;
+  height: 100vh;
+  position: relative;
+}
+
+/* --- Background Image from Pixabay (free to use)
+https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg
+
+Elements: CONTENT and BACKGROUND set the "Professional Training and Development Success" feeling Background Image.
+The remaining elements ensure the image coveras the whole viewport and that the image is behind (z-index: -1) all other elements.
+--- */
+.showcase:before {
+  content: '';
+  background: url(images/MountainsSuccess.webp) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* === Fixed Footer with Scrollable Body === */
+.container {
     width: 100%;
-    /* Center the DIV horizontally */
-    /* margin: 0 auto; */
 }
 
-/* --- Placing additonal Body elements here for clarity. --- */
-body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-.fixed-navigation, .fixed-footer{
-    width: 100%;
-    position: fixed;
-    background: #999999;
-    padding: 10px 0;
-    color: #ffffff;
-}
-
-/* --- Fixes the Navigation to the top (no scrolling). --- */
-.fixed-navigation {
-    top: 0;
-}
-
-/* --- Fixes the Footer to the bottom (no scrolling). --- */
+/* --- Fixed Footer with [display: grid] and [grid-template-columns: 1fr 1fr 1fr] to set Footer Elements in a row.  --- */
 .fixed-footer {
-    bottom: 0;
-}    
+  width: 100%;
+  position: fixed;
+  background: rgba(13, 110, 139 , 0.75);
+  padding: 10px 0;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* --- Anchors Footer to the bottom of the display/viewport  --- */
+  bottom: 0;
+}
 
+.footer {
+  margin: 0;
+  text-align: center;
+}
 /* ---  Making the Navigation Links visible against the #999999 (grey) background of the Fixed Navigation --- */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 7px 25px;
-    display: inline-block;
+footer a {
+  color: #ffffff;
+  font-size: 110%;
+  padding: 0px 10px;
+}
+
+footer a i:hover {
+    color: #30e0fc;
+    /* zoom: 120%; */
+    /* transform: scale() works on all brosers. zoom: doesn't work on Firefox. */
+    transform: scale(1.5);
 }
