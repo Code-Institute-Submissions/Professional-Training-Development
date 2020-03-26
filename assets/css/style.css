@@ -50,7 +50,7 @@ The remaining elements ensure the image coveras the whole viewport and that the 
 --- */
 .showcase:before {
   content: '';
-  background: url(assets/images/MountainsSuccess.webp) no-repeat center center/cover;
+  background: url(/assets/images/MountainsSuccess.webp) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
