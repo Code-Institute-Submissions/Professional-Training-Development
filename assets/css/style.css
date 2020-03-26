@@ -126,6 +126,11 @@ footer a i:hover {
     transform: scale(1.5); /* transform: scale() works on all browsers. zoom: doesn't work on Firefox. Also, zoom: ruins the footer. */
 }
 
+/* --- Add padding to the Fontawesome icons for the Left and Right Footer elements. It keeps the icon layout consisten across smaller devices. --- */
+.fa-graduation-cap, .fa-location-arrow {
+    padding-right: 10px;
+}
+
 /* --- Tool-tip on Hover by Kevin Powell: https://www.youtube.com/watch?v=xoRbkm8XgfQ HTML <i ... tool-tip="Tool-tip Text" ... ></i> --- */
 /* --- Only want Tool-tip on displays larger than 600px, and rely solely on transform: scale(1,5); for footer a {} on smaller displays --- */
 @media screen and (min-width: 600px){
@@ -330,4 +335,34 @@ footer a i:hover {
   transition: color 0.4s ease;
 }
 
+
 /* === Adjusting to smaller displays and devices, for both Style and Menu === */
+/* --- Samsung Galaxy S5 --- */
+@media screen and (max-width: 360px) {
+    .menu-wrap .menu > div {
+        width: 60%;
+        height: 60%;
+    }
+    footer a {
+        font-size: 80%;
+    }
+}
+
+/* --- Apple iPhone 5/SE --- */
+@media screen and (max-width: 320px) {
+    .menu-wrap .menu > div {
+        width: 60%;
+        height: 60%;
+    }
+    footer a {
+        font-size: 70%;
+    }
+/*
+    .fixed-footer {
+        padding: 0;
+    }
+    .fa-graduation-cap, .fa-location-arrow {
+        padding-right: 5px;
+    }    
+*/
+}
