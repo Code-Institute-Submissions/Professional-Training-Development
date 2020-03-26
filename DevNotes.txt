@@ -1,7 +1,47 @@
 Fixed Navigation and Footer from https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php
 Hamburger Menu for Mobile Devices from https://www.youtube.com/watch?v=DZg6UfS5zYg
-Using GaffCo Consulting Logo Colours
+NOT -- Using GaffCo Consulting Logo Colours
     Orange: PMS 715 C / CMYK 0 54 93 0 / rgb(255, 117, 18) / #ff7512
     Blue: PMS 2995 C / CMYK 81 12 1 0 / rgb(48, 224) / #30e0fc
     Grey: 40% Black / RGB (153, 153, 153) / #999999
 Using GaffCo Consulting Font: Bebas Neue (will use Open Sans and/or Raleway too)
+/* --- Background Image from Pixabay (free to use)
+https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg
+
+Images elicits and emotion of success after a hard slog. "Feel-good" image = let me help you become equally successful and happy!
+
+Elements: CONTENT and BACKGROUND set the "Professional Training and Development Success" feeling Background Image.
+The remaining elements ensure the image coveras the whole viewport and that the image is behind (z-index: -1) all other elements.
+--- */
+"How about this:#Flexbox is for alignment. #CSSGrid is for layout."
+"Grid makes actual columns and rows."
+"Use grid when you already have the layout structure in mind, and flex when you just want everything to fit. Layout first vs content first."
+
+
+    <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    </div>
+    <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    </div>
+    <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet quas mollitia sit hic, a labore eaque cumque aliquid vel, animi deleniti aut sint aperiam assumenda. Quidem excepturi dolores perferendis.</p>
+    </div>
