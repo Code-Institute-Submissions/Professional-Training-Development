@@ -50,6 +50,7 @@ The remaining elements ensure the image coveras the whole viewport and that the 
 body {
   content: '';
   background: url("/assets/images/MountainsSuccess.webp") no-repeat center center/cover;
+  background-color: rgb(74, 180, 212); /* For Safari browsers that don't support background images. */
   position: absolute;
   top: 0;
   left: 0;
