@@ -21,7 +21,7 @@ Using GaffCo Consulting Font: Bebas Neue (will use Open Sans and/or Raleway too)
 }
 
 body {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.4;
   /* background-color: rgb(13, 110, 139); */
 }
@@ -47,15 +47,19 @@ Images elicits and emotion of success after a hard slog. "Feel-good" image = let
 Elements: CONTENT and BACKGROUND set the "Professional Training and Development Success" feeling Background Image.
 The remaining elements ensure the image coveras the whole viewport and that the image is behind (z-index: -1) all other elements.
 --- */
-.showcase:before {
+body {
   content: '';
-  background: url(/assets/images/MountainsSuccess.webp) no-repeat center center/cover;
+  background: url("/assets/images/MountainsSuccess.webp") no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 /* --- Flexbox: Center Text Vertically and Horizontally --- */
@@ -68,27 +72,42 @@ The remaining elements ensure the image coveras the whole viewport and that the 
   height: 100%;
 }
 
-.showcase h1 {
-  font-size: 4rem;
+/* --- Make sure that the Positioning/Marketing Statetment fits all displays. Make it larger for displays with plenty of "Real Estate". --- */
+@media screen and (min-width: 600px) and (min-height: 700px) {
+    .showcase h1 {
+      font-size: 4rem;
+    }
+
+    .showcase p {
+    font-size: 1.3rem;
+    }
 }
 
-.showcase p {
-  font-size: 1.3rem;
+/* --- Grid Layout for all pages, except it's not used on the main page (Flexbox is used instead), and the Footer is all Grid in any case, including on the main page. --- */
+* {
+  box-sizing: border-box;
 }
 
-.btn {
-  display: inline-block;
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.btn:hover {
-  opacity: 0.7;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 /* === Fixed Footer with Scrollable Body === */
@@ -132,34 +151,31 @@ footer a i:hover {
 }
 
 /* --- Tool-tip on Hover by Kevin Powell: https://www.youtube.com/watch?v=xoRbkm8XgfQ HTML <i ... tool-tip="Tool-tip Text" ... ></i> --- */
-/* --- Only want Tool-tip on displays larger than 600px, and rely solely on transform: scale(1,5); for footer a {} on smaller displays --- */
-@media screen and (min-width: 600px){
-    i[tool-tip] {
-        position: relative;
-    }
+i[tool-tip] {
+    position: relative;
+}
 
-    i[tool-tip]::after {
-        content: attr(tool-tip);
-        display: block;
-        position: absolute;
-        background-color: rgb(13, 110, 139);
-        padding: 1em 2em;
-        color: white;
-        border-radius: 5px;
-        font-size: .75em;
-        bottom: 0;
-        left: -30px;
-        white-space: nowrap;
-        transform: scale(0);
-        transition: transform ease-out 250ms, bottom ease-out 250ms;
-        font-family: 'Bebas Neue', sans-serif;
-        box-shadow: 5px 5px 1px rgba(128, 128, 128, 0.7);
-    }
+i[tool-tip]::after {
+    content: attr(tool-tip);
+    display: block;
+    position: absolute;
+    background-color: rgb(13, 110, 139);
+    padding: 1em 2em;
+    color: white;
+    border-radius: 5px;
+    font-size: .75em;
+    bottom: 0;
+    left: -10px; /* Works on all tested displays (Chrome --> Inspect and FireFox RDM) and devices. The Tool-Tips are fully visible. */
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-out 250ms, bottom ease-out 250ms;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 2px 2px 1px rgba(128, 128, 128, 0.7);
+}
 
-    i[tool-tip]:hover::after {
-        transform: scale(1);
-        bottom: 200%;
-    }
+i[tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 200%;
 }
 
 
@@ -249,8 +265,6 @@ footer a i:hover {
   transform: rotate(225deg);
 }
 
-
-
 /* --- Show Hamburger-menu when toggler is checked and target (~) .menu --- */
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
@@ -281,37 +295,24 @@ footer a i:hover {
   justify-content: center;
 }
 
+/* --- Add padding to the Fontawesome icons for the Menu elements; "breathing-space. --- */
+.menu-wrap .menu .fa {
+    padding-right: 10px;
+}
+
 /* --- Center the menu on the page when open. HTML <div class="menu"> --> <div> <-- --- */
 .menu-wrap .menu > div {
   background: var(--overlay-color);
-  /* border-radius: 50%; */
-  /* width: 50vw;
-  height: 50vw; */
-  width: 50%;
-  height: 50%;
+  border-radius: 50%;
+  width: 200%;
+  height: 200%;
   display: flex;
   flex: none;
   align-items: center;
   justify-content: center;
   transform: scale(0); /* Scaled down to zero when Hamburger-menu is not clicked. */ /* Uncomment this when styling the menu items, together with... */
-  transition: all 0.4s ease;
+  /* transition: all 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
-
-/* --- Set Menu Circle to a large enough size to cover the Navigation Menu Items --- */
-/* @media screen and (min-width: 1200px) {
-  .menu-wrap .menu > div {
-    width: 30vw;
-    height: 30vw;
-  }
-} */
-
-/* --- Set Menu Circle to a large enough size to cover the Navigation Menu Items --- */
-/* @media screen and (max-width: 760px) {
-  .menu-wrap .menu > div {
-    width: 100vw;
-    height: 100vw;
-  }
-} */
 
 /* --- Center the menu on the page when open. HTML <div class="menu"><div> --> <div> <-- --- */
 .menu-wrap .menu > div > div {
@@ -319,7 +320,7 @@ footer a i:hover {
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0; /* Uncomment this when styling the menu items, together with... */
-  transition: opacity 0.4s ease;
+  /* transition: opacity 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
 
 .menu-wrap .menu > div > div > ul > li {
@@ -332,28 +333,54 @@ footer a i:hover {
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none; /* Remove underline in Links */
-  transition: color 0.4s ease;
+  /* transition: color 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
 
 
 /* === Adjusting to smaller displays and devices, for both Style and Menu === */
-/* --- Samsung Galaxy S5 --- */
-@media screen and (max-width: 360px) {
-    .menu-wrap .menu > div {
+/* --- 420px devices --- */
+@media screen and (max-width: 420px) {
+    /* .menu-wrap .menu > div {
         width: 60%;
         height: 60%;
     }
     footer a {
         font-size: 80%;
+    }*/
+    .showcase h1 {
+        font-size: 2rem;
     }
+    .showcase p {
+        font-size: 1rem;
+    }
+}
+
+
+/* --- Samsung Galaxy S5 --- */
+@media screen and (max-width: 360px) {
+    /* .menu-wrap .menu > div {
+        width: 60%;
+        height: 60%;
+    } */
+    footer a {
+        font-size: 80%;
+    }
+    .showcase h1 {
+        font-size: 2rem;
+    }
+
+    .showcase p {
+        font-size: 1rem;
+    }
+
 }
 
 /* --- Apple iPhone 5/SE --- */
 @media screen and (max-width: 320px) {
-    .menu-wrap .menu > div {
+    /* .menu-wrap .menu > div {
         width: 60%;
         height: 60%;
-    }
+    } */
     footer a {
         font-size: 70%;
     }
