@@ -8,7 +8,7 @@
   --menu-speed: 0.75s;
 }
 
-/* --- "Reset!"  --- */
+/* --- "Reset!" and Set Basic Parameters  --- */
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +44,11 @@ The remaining elements ensure the image coveras the whole viewport and that the 
 --- */
 body {
   content: '';
-  background: url("/assets/images/MountainsSuccess.webp") no-repeat center center/cover;
+  background: url("/assets/images/MountainsSuccess.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   background-color: rgba(13, 110, 139, 0.75); /* For Safari browsers as they don't support background images. */
   position: absolute;
   top: 0;
@@ -52,10 +56,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 /* --- Flexbox: Center Text Vertically and Horizontally --- */
@@ -74,22 +74,30 @@ body {
       font-size: 4rem;
     }
 
+    .showcase h2 {
+      font-size: 2rem;
+    }
+
     .showcase p {
     font-size: 1.3rem;
     }
 }
 
-/* --- Grid Layout for all pages, (index.html uses Flexbox too), and the Footer is all Grid in any case, including on the main page. --- */
-* {
-  box-sizing: border-box;
-  grid-gap: 10px;
+.column {
+  padding: 10px;
+  background: rgba(13, 110, 139 , 0.75);
 }
 
+/* --- Grid Layout for all pages, (index.html uses Flexbox too), and the Footer is all Grid in any case, including on the main page. --- */
 /* Create three equal columns that float next to one another */
 .column {
   float: left;
-  width: 33.33%;
+  width: 45%;
+  height: 200px;
   padding: 10px;
+  margin: 10px;
+  color: #ffffff;
+  background-color: rgba(13, 110, 139, 0.60);
 }
 
 /* Clear floats after the columns */
@@ -100,12 +108,18 @@ body {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
 
+/* === Section Styling === */
+/* ---  Making the Navigation Links visible against the #999999 (grey) background of the Fixed Navigation --- */
+section a {
+  color: #ffffff;
+  text-decoration: none; /* Remove underline from links = HTML style="text-decoration:none" */
+}
 
 /* === Fixed Footer with Scrollable Body === */
 .container {
@@ -143,6 +157,7 @@ footer a i:hover {
 }
 
 /* --- Add padding to the Fontawesome icons for the Left and Right Footer elements. It keeps the icon layout consisten across smaller devices. --- */
+.fa-calendar,
 .fa-graduation-cap, .fa-location-arrow {
     padding-right: 10px;
     padding-left: 10px;
@@ -161,14 +176,15 @@ i[tool-tip]::after {
     padding: 1em 2em;
     color: white;
     border-radius: 5px;
-    font-size: .75em;
+    font-size: 0.75em;
     bottom: 0;
     left: -10px; /* Works on all tested displays (Chrome --> Inspect and FireFox RDM) and devices. The Tool-Tips are fully visible. */
-    white-space: nowrap;
+    white-space: wrap;
     transform: scale(0);
     transition: transform ease-out 250ms, bottom ease-out 250ms;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 2px 2px 1px rgba(128, 128, 128, 0.7);
+    /* box-shadow: 2px 2px 1px rgba(128, 128, 128, 0.7); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 i[tool-tip]:hover::after {
@@ -416,4 +432,101 @@ i[tool-tip]:hover::after {
         padding-right: 5px;
     }    
 */
+}
+
+/* === Course Details Upon Click === */
+/* --- From https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal --- */
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+
+/* Add animation (Standard syntax) */
+@keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+
+/* The modal's background */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Display the modal when targeted */
+.modal:target {
+  display: table;
+  position: absolute;
+}
+
+/* The modal box */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: rgba(13, 110, 139 , 0.75);
+  color: #ffffff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  /* border: 1px #777 solid; */
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Add animation */
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+/* The button used to close the modal */
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-container {
+  padding: 10px 16px;
+}
+
+header {
+  background-color: rgb(13, 110, 139);
+  font-size: 20px;
+  color: white;
+}
+
+.button {
+  background-color: rgb(13, 110, 139);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
