@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Bebas+Neue&display=swap');
 
-/*
-Using GaffCo Consulting Font: Bebas Neue (will use Open Sans and/or Raleway too)
-*/
-
 /* === Style Variables: Colours and Hamburger Menu-speed === */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
@@ -23,7 +19,6 @@ Using GaffCo Consulting Font: Bebas Neue (will use Open Sans and/or Raleway too)
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
-  /* background-color: rgb(13, 110, 139); */
 }
 
 .container {
@@ -50,7 +45,7 @@ The remaining elements ensure the image coveras the whole viewport and that the 
 body {
   content: '';
   background: url("/assets/images/MountainsSuccess.webp") no-repeat center center/cover;
-  background-color: rgb(74, 180, 212); /* For Safari browsers that don't support background images. */
+  background-color: rgba(13, 110, 139, 0.75); /* For Safari browsers as they don't support background images. */
   position: absolute;
   top: 0;
   left: 0;
@@ -84,17 +79,17 @@ body {
     }
 }
 
-/* --- Grid Layout for all pages, except it's not used on the main page (Flexbox is used instead), and the Footer is all Grid in any case, including on the main page. --- */
+/* --- Grid Layout for all pages, (index.html uses Flexbox too), and the Footer is all Grid in any case, including on the main page. --- */
 * {
   box-sizing: border-box;
+  grid-gap: 10px;
 }
 
-/* Create three equal columns that floats next to each other */
+/* Create three equal columns that float next to one another */
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -105,11 +100,12 @@ body {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column {
     width: 100%;
   }
 }
+
 
 /* === Fixed Footer with Scrollable Body === */
 .container {
@@ -149,6 +145,7 @@ footer a i:hover {
 /* --- Add padding to the Fontawesome icons for the Left and Right Footer elements. It keeps the icon layout consisten across smaller devices. --- */
 .fa-graduation-cap, .fa-location-arrow {
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 /* --- Tool-tip on Hover by Kevin Powell: https://www.youtube.com/watch?v=xoRbkm8XgfQ HTML <i ... tool-tip="Tool-tip Text" ... ></i> --- */
@@ -266,6 +263,8 @@ i[tool-tip]:hover::after {
   transform: rotate(225deg);
 }
 
+
+
 /* --- Show Hamburger-menu when toggler is checked and target (~) .menu --- */
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
@@ -304,7 +303,7 @@ i[tool-tip]:hover::after {
 /* --- Center the menu on the page when open. HTML <div class="menu"> --> <div> <-- --- */
 .menu-wrap .menu > div {
   background: var(--overlay-color);
-  border-radius: 50%;
+  /* border-radius: 50%; */ /* Square looks nicer and suits the style of the site better. */
   width: 200%;
   height: 200%;
   display: flex;
@@ -314,6 +313,22 @@ i[tool-tip]:hover::after {
   transform: scale(0); /* Scaled down to zero when Hamburger-menu is not clicked. */ /* Uncomment this when styling the menu items, together with... */
   /* transition: all 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
+
+/* --- Set Menu Circle to a large enough size to cover the Navigation Menu Items --- */
+/* @media screen and (min-width: 1200px) {
+  .menu-wrap .menu > div {
+    width: 30vw;
+    height: 30vw;
+  }
+} */
+
+/* --- Set Menu Circle to a large enough size to cover the Navigation Menu Items --- */
+/* @media screen and (max-width: 760px) {
+  .menu-wrap .menu > div {
+    width: 100vw;
+    height: 100vw;
+  }
+} */
 
 /* --- Center the menu on the page when open. HTML <div class="menu"><div> --> <div> <-- --- */
 .menu-wrap .menu > div > div {
@@ -339,6 +354,14 @@ i[tool-tip]:hover::after {
 
 
 /* === Adjusting to smaller displays and devices, for both Style and Menu === */
+/* --- Making sure that the FontAwesome icons and link text fold at the same resolution for a consistent experience. --- */
+@media screen and (max-width: 570px) {
+  .fa-graduation-cap, .fa-location-arrow {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 /* --- 420px devices --- */
 @media screen and (max-width: 420px) {
     /* .menu-wrap .menu > div {
