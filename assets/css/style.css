@@ -509,12 +509,14 @@ i[tool-tip]:hover::after {
 
 .modal-container {
   padding: 10px 16px;
+  text-align: left;
 }
 
 header {
   background-color: rgb(13, 110, 139);
   font-size: 20px;
   color: white;
+  text-align: left;
 }
 
 .button {
