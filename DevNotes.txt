@@ -1,3 +1,7 @@
+The Blue Colour Scheme is chosen as it represents competence, intelligence, communication, trust, efficiency, duty, and logic.
+https://www.canva.com/learn/color-psychology-the-logo-color-tricks-used-by-top-companies/
+
+
 /* --- * --- */
 Fixed Navigation and Footer from https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php
 

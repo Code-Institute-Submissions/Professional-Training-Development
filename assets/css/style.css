@@ -86,14 +86,15 @@ body {
 .column {
   padding: 10px;
   background: rgba(13, 110, 139 , 0.75);
+  /* border-radius: 15px; */ /* Soft corners to suit the soft skills training. */
 }
 
 /* --- Grid Layout for all pages, (index.html uses Flexbox too), and the Footer is all Grid in any case, including on the main page. --- */
 /* Create three equal columns that float next to one another */
 .column {
   float: left;
-  width: 45%;
-  height: 200px;
+  width: 60%;
+  /* height: 200px;*/ /* Height for test purposes only. */
   padding: 10px;
   margin: 10px;
   color: #ffffff;
@@ -113,6 +114,7 @@ body {
     width: 100%;
   }
 }
+
 
 /* === Section Styling === */
 /* ---  Making the Navigation Links visible against the #999999 (grey) background of the Fixed Navigation --- */
@@ -175,7 +177,7 @@ i[tool-tip]::after {
     background-color: rgb(13, 110, 139);
     padding: 1em 2em;
     color: white;
-    border-radius: 5px;
+    /* border-radius: 15px; */ /* Soft corners to suit the soft skills training. */
     font-size: 0.75em;
     bottom: 0;
     left: -10px; /* Works on all tested displays (Chrome --> Inspect and FireFox RDM) and devices. The Tool-Tips are fully visible. */
@@ -185,6 +187,7 @@ i[tool-tip]::after {
     font-family: 'Raleway', sans-serif;
     /* box-shadow: 2px 2px 1px rgba(128, 128, 128, 0.7); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 i[tool-tip]:hover::after {
@@ -483,6 +486,7 @@ i[tool-tip]:hover::after {
   text-align: justify;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-radius: 15px; */ /* Soft corners to suit the soft skills training. */
 
   /* Add animation */
   -webkit-animation-name: example; /* Chrome, Safari, Opera */
@@ -517,6 +521,7 @@ header {
   font-size: 20px;
   color: white;
   text-align: left;
+  /* border-radius: 15px; */ /* Soft corners to suit the soft skills training. */
 }
 
 .button {
@@ -531,4 +536,5 @@ header {
   margin: 10px 2px 4px 2px;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-radius: 15px; */ /* Soft corners to suit the soft skills training. */
 }
