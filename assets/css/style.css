@@ -44,7 +44,7 @@ The remaining elements ensure the image coveras the whole viewport and that the 
 --- */
 body {
   content: '';
-  background: url("/assets/images/MountainsSuccess.webp");
+  background: url("../images/MountainsSuccess.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
