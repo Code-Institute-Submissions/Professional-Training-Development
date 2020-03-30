@@ -369,7 +369,7 @@ i[tool-tip]:hover::after {
 /* The modal's content */
 .modal-dialog .modal-content {
   margin: auto;
-  background-color: rgba(13, 110, 139 , 0.75);
+  background-color: rgba(8, 126, 161, 0.95); /* Making the white text easier to read againnst the white menu text behind the modal. */
   color: #ffffff;
   position: relative;
   padding: 0;
@@ -428,6 +428,8 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+/* === Responsive Web Design === */
 /* --- Make sure that the Positioning/Marketing Statetment fits all displays. Make it larger for displays with plenty of "Real Estate". --- */
 @media screen and (min-width: 600px) and (min-height: 600px) {
     .showcase h1 {
