@@ -1,4 +1,4 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
 
 # Professional Training and Development
 
@@ -6,7 +6,7 @@
 
 [Professional Training and Development](https://naoisegaffney.github.io/Professional-Training-Development/index.html)
 
-![Screenshot of the main page (index.html)](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/Screenshot%202020-03-30%2000.46.02.png)
+![Screenshot of the main page (index.html)](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Screenshot%202020-03-30%2000.46.02.png)
 
 A responsive website using only HTML 5 and CSS 3 to provide Training and Development, and Coaching opportunities to organisations and individuals.
 
@@ -43,7 +43,7 @@ Given (how things begin) When (action taken) Then outcome of action.
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-Balsamiq Wireframes here (simplified views, and not complete). [Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/User-Centric%20Front-End%20Development%20Project%201.pdf)
+Balsamiq Wireframes here (simplified views, and not complete). [Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User-Centric%20Front-End%20Development%20Project%201.pdf)
 
 ## Solution
 ### Features
