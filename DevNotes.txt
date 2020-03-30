@@ -1,3 +1,5 @@
+Set course description modal to 'z-index: 3' to place it in front of the fixed footer.
+
 The Blue Colour Scheme is chosen as it represents competence, intelligence, communication, trust, efficiency, duty, and logic.
 https://www.canva.com/learn/color-psychology-the-logo-color-tricks-used-by-top-companies/
 
