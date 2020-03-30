@@ -429,7 +429,7 @@ header {
 }
 
 
-/* === Responsive Web Design === */
+/* === Responsive Web Design - Mobile Devices First and Foremost === */
 /* --- Make sure that the Positioning/Marketing Statetment fits all displays. Make it larger for displays with plenty of "Real Estate". --- */
 @media screen and (min-width: 600px) and (min-height: 600px) {
     .showcase h1 {
