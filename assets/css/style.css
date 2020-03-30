@@ -19,6 +19,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
+  font-size: 90%; /* Course menus fit the samllest screens (Apple iPhone 5) */
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
   color: #ffffff;
   height: 100vh;
   position: relative;
+  background: rgba(13, 110, 139 , 0.30); /* Make the white text easier to read over the background image. */
 }
 
 /* --- Background Image from Pixabay (free to use)
@@ -73,26 +75,11 @@ body {
   height: 100%;
 }
 
-/* --- Make sure that the Positioning/Marketing Statetment fits all displays. Make it larger for displays with plenty of "Real Estate". --- */
-@media screen and (min-width: 600px) and (min-height: 700px) {
-    .showcase h1 {
-      font-size: 4rem;
-    }
-
-    .showcase h2 {
-      font-size: 2rem;
-    }
-
-    .showcase p {
-    font-size: 1.3rem;
-    }
-}
-
-/* --- Grid Layout for all pages, (index.html uses Flexbox too), and the Footer is all Grid in any case, including on the main page. --- */
+/* --- Grid Layout for all pages, (using Flexbox too), and the Footer is all Grid in any case. --- */
 /* Create three equal columns that float next to one another */
 .column {
   float: left;
-  width: 60%;
+  width: 100%;
   padding: 10px;
   margin: 10px;
   color: #ffffff;
@@ -104,13 +91,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 }
 
 
@@ -159,8 +139,8 @@ footer a i:hover {
 /* --- Add padding to the Fontawesome icons for the Left and Right Footer elements. It keeps the icon layout consisten across smaller devices. --- */
 .fa-calendar,
 .fa-graduation-cap, .fa-location-arrow {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* --- Tool-tip on Hover by Kevin Powell: https://www.youtube.com/watch?v=xoRbkm8XgfQ HTML <i ... tool-tip="Tool-tip Text" ... ></i> --- */
@@ -278,8 +258,6 @@ i[tool-tip]:hover::after {
   transform: rotate(225deg);
 }
 
-
-
 /* --- Show Hamburger-menu when toggler is checked and target (~) .menu --- */
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
@@ -350,71 +328,6 @@ i[tool-tip]:hover::after {
   /* transition: color 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
 
-
-/* === Adjusting to smaller displays and devices, for both Style and Menu === */
-/* --- Making sure that the FontAwesome icons and link text fold at the same resolution for a consistent experience. --- */
-@media screen and (max-width: 570px) {
-  .fa-graduation-cap, .fa-location-arrow {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
-/* --- 420px devices --- */
-@media screen and (max-width: 420px) {
-    /* .menu-wrap .menu > div {
-        width: 60%;
-        height: 60%;
-    }
-    footer a {
-        font-size: 80%;
-    }*/
-    .showcase h1 {
-        font-size: 2rem;
-    }
-    .showcase p {
-        font-size: 1rem;
-    }
-}
-
-
-/* --- Samsung Galaxy S5 --- */
-@media screen and (max-width: 360px) {
-    /* .menu-wrap .menu > div {
-        width: 60%;
-        height: 60%;
-    } */
-    footer a {
-        font-size: 80%;
-    }
-    .showcase h1 {
-        font-size: 2rem;
-    }
-
-    .showcase p {
-        font-size: 1rem;
-    }
-
-}
-
-/* --- Apple iPhone 5/SE --- */
-@media screen and (max-width: 320px) {
-    /* .menu-wrap .menu > div {
-        width: 60%;
-        height: 60%;
-    } */
-    footer a {
-        font-size: 70%;
-    }
-/*
-    .fixed-footer {
-        padding: 0;
-    }
-    .fa-graduation-cap, .fa-location-arrow {
-        padding-right: 5px;
-    }    
-*/
-}
 
 /* === Course Details Upon Click === */
 /* --- From https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal --- */
@@ -513,4 +426,27 @@ header {
   margin: 10px 2px 4px 2px;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* --- Make sure that the Positioning/Marketing Statetment fits all displays. Make it larger for displays with plenty of "Real Estate". --- */
+@media screen and (min-width: 600px) and (min-height: 600px) {
+    .showcase h1 {
+      font-size: 4rem;
+    }
+
+    .showcase h2 {
+      font-size: 2rem;
+    }
+
+    .showcase p {
+    font-size: 1.3rem;
+    }
+
+    .column {
+      width: 60%;
+    }
+
+    body {
+      font-size: 100%;
+    }
 }
