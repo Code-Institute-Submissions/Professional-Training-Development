@@ -1,4 +1,4 @@
-![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
+![GaffCo Consulting Logo|50%](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
 
 # Professional Training and Development
 
