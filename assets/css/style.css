@@ -158,7 +158,7 @@ i[tool-tip]::after {
     font-size: 0.75em;
     bottom: 0;
     left: -10px; /* Works on all tested displays (Chrome --> Inspect and FireFox RDM) and devices. The Tool-Tips are fully visible. */
-    white-space: wrap;
+    white-space: normal;
     transform: scale(0);
     transition: transform ease-out 250ms, bottom ease-out 250ms;
     font-family: 'Raleway', sans-serif;
