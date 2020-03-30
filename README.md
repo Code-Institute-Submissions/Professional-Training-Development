@@ -43,7 +43,7 @@ Given (how things begin) When (action taken) Then outcome of action.
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-Balsamiq Wireframes here (simplified views, and not complete).
+Balsamiq Wireframes here (simplified views, and not complete). [Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/Professional%20Training%20and%20Development.md)
 
 ## Solution
 ### Features
