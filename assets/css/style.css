@@ -322,6 +322,7 @@ i[tool-tip]:hover::after {
   padding: 1rem;
 }
 
+/* --- Menu Items: FontAwesome Icons and Text --- */
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none; /* Remove underline in Links */
@@ -451,4 +452,8 @@ header {
     body {
       font-size: 100%;
     }
+
+    .menu-wrap .menu > div > div > ul > li > a {
+      font-size: 150%; /* make the menu items and icons stand out and more in line with the rest of the elements on larger displays. */
+  }
 }
