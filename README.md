@@ -1,5 +1,3 @@
-![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
-
 # Professional Training and Development
 
 "Organisations Achieve Greater Value throgh Professionally Coached Employees" - GaffCo Consulting Professional Communication Competence
@@ -33,17 +31,30 @@ Book courses (yet to be implemented using JavaScript and Python 3). Courses are 
 ## Processes
 ### UX
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The website provides a responsive and easy-to-use visual design, based on a good representation of the elements, and with intuitive navigation.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+The website follows a hub-and-spoke Information Architecture though is flat which makes it easy to navigate between the "spokes".
 
-As a client, I want to..., so that.
-Given (how things begin) When (action taken) Then outcome of action.
+There are three main actors/roles that will use the services provided by the website: Client, Collaborator, and Individual.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+* As a client I want to improve the knowledge, skills, and attitude of my employees so that the performance of my organisation is greatly improved.
+	* As a client I want to view the training and development, and coaching opportunities provided by GaffCo Consulting so that I can plan the training and development plans of my employees.
+	* As a client I want to book the relevant programmes for the training and development for my employees so that they can perform better on-the-job.
+	* As a client I want to contact the owner (Naoise Gaffney) to discuss the details of the programmes so that I can plan the continued development of my employees.
 
-Balsamiq Wireframes here (simplified views, and not complete). [Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User-Centric%20Front-End%20Development%20Project%201.pdf)
+* As a collaborator I want to work with the owner (Naoise Gaffney) so that we can provide bespoke or off-the-shelf training and development opportunities to our clients.
+	* As a collaborator I want to view the training and development, and coaching opportunities provided by GaffCo Consulting so that I can plan the training and development plans for my clients.
+	* As a collaborator I want to book the relevant programmes for the training and development of my clients so that I can provide professional skills. training.
+	* As a collaborator I want to contact the owner (Naoise Gaffney) to discuss the details of the programmes so that I can plan the continued development of my clients.
+
+* As an individual I want to improve my professional skills so that I can perform better on-the-job.
+	* As an individual I want to view the coaching opportunities provided by GaffCo Consulting so that I can improve my professional skills.
+	* As an individual I want to book the relevant coaching opportunities provided by GaffCo Consulting so that I can improve my professional skills.
+	* As an individual I want to contact the owner (Naoise Gaffney) to discuss the details of the coaching opportunities so that I can improve my professional skills.
+
+Balsamiq wireframes and mockups of the website (simplified views, and not complete representations):
+
+[Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User-Centric%20Front-End%20Development%20Project%201.pdf)
 
 ## Solution
 ### Features
@@ -63,10 +74,29 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technology
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+A list of the languages, frameworks, libraries, and other tools used for this project.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+* [HTML 5.2. - W3C Recommendation, 14 December 2017](https://www.w3.org/TR/html52/)
+	* The project uses HTML 5 to create the content.
+* [CSS 3 CSS - Snapshot 2018 W3C Working Group Note, 22 January 2019](https://www.w3.org/TR/css-2018/)
+	* The project uses CSS 3 to style the content and provide the layout.
+* [GitHub / GitPod /Git / GitHub Pages](https://github.com/)
+	* The project uses GitHub:
+		* GitPod to create and edit the project files (HTML 5 and CSS 3).
+		* Git to add, commit, and push the project files to GitHub.
+		* GitHub Pages turns GitHub Repositories into Websites.
+* [Visual Studio Code](https://code.visualstudio.com/)
+	* Code writing and staging. Went over to Visual Studio Code for improved coding ease, performance, and stability.
+* [Google Fonts: Raleway](https://fonts.googleapis.com/css?family=Raleway%7C&display=swap)
+	* Using this font in different sizes for all text.
+* [Pixabay Free Images: Mountains](https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg)
+	* Using this image as the background image througout the website.
+* [CSS Before and After pseudo elements explained - part two: the content property by Kevin Powell](https://www.youtube.com/watch?v=xoRbkm8XgfQ)
+	* Using the hover tool-tip function for the fixed footer FontAwesome icons: resumé, social and contact links, and location.
+* [Pure CSS Hamburger Menu & Overlay by Traversy Media](https://www.youtube.com/watch?v=DZg6UfS5zYg)
+	* Using the described hamburger menu function for my menu.
+* [Target Modal from W3Schools](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal)
+	* Using this modal function for my course details.
 
 ## Impact
 
@@ -90,6 +120,19 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
+HTML and CSS Validation: [Nu HTML and CSS Checker](https://validator.w3.org/nu/)
+
+CSS Check!
+
+HTML:
+
+* index.html: Error: Attribute tool-tip not allowed on element i at this point.
+* organisations.html: Error: Attribute tool-tip not allowed on element i at this point.
+* individuals.html: Error: Attribute tool-tip not allowed on element i at this point.
+* programmes.html: Error: Attribute tool-tip not allowed on element i at this point.
+
+The "Error: Attribute tool-tip not allowed on element i at this point." errors are not important as the tool-tip function is best attached to the FontAwesome icons to provide the required functionality.
+
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
@@ -101,8 +144,15 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
+git add .
+git commit -m "..."
+git push
+...
+enable GitPages
+
 
 ## Credits
+![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
 
 ### Content
 - GitHub Pages: [https://naoisegaffney.github.io/Resume/index.html](https://naoisegaffney.github.io/Resume/index.html)
