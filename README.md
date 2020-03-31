@@ -54,7 +54,9 @@ There are three main actors/roles that use the services provided by the website:
 
 Balsamiq wireframes and mockups of the website (simplified views, and not complete representations):
 
-[Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User-Centric%20Front-End%20Development%20Project%201.pdf)
+[Large Wireframe Diagrams of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User-Centric%20Front-End%20Development%20Project%201.pdf)
+
+[Small Wireframe Diagrams with Notes (Use Cases) of the Website](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User-Centric%20Front-End%20Development%20Project%201%20-%20Includes%20Notes.pdf)
 
 ## Solution
 ### Features
@@ -134,8 +136,18 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 		* GitPod to create and edit the project files (HTML 5 and CSS 3).
 		* Git to add, commit, and push the project files to GitHub.
 		* GitHub Pages turns GitHub Repositories into Websites.
+* [Code Institute GitPod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+	* Using the GitPod Full Template from the Code Institute for my project.
+* [DropBox](https://www.dropbox.com/)
+	* Using DropBox as a staging area for Visual Studio Code, and synching this with GitHub.
 * [Visual Studio Code](https://code.visualstudio.com/)
 	* Code writing and staging. Went over to Visual Studio Code for improved coding ease, performance, and stability (used Repl-it~ and GitHub first).
+* [LiveServer for Visual Code Studio](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+	* This is the local Web Server used for development and testing, running as an add-on to Visual Studio Code.
+* [MacDown](https://macdown.uranusjr.com/)
+	* Using this application to write this documentation in MarkDown.
+* [Balsamiq](https://balsamiq.com/)
+	* Using this application to create website wireframes and mockups.
 * [Google Fonts: Raleway](https://fonts.googleapis.com/css?family=Raleway%7C&display=swap)
 	* Using this font in different sizes for all text.
 * [FontAwesome CDN](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css)
@@ -148,6 +160,8 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* Using the described hamburger menu function for my menu.
 * [Target Modal from W3Schools](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal)
 	* Using this modal function for my course details.
+* [FREE Pro Git eBook by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
+	* Read parts of this eBook to better understand Git.
 * [Strong Black French Press Coffee](https://www.youtube.com/watch?v=st571DYYTR8)
 	* Keeps me alert and on-schedule; keeps me going through the night. This is the secret source of my programming-powers. :-)
 
@@ -233,22 +247,35 @@ HTML:
 The "Error: Attribute tool-tip not allowed on element i at this point." errors are not important as the tool-tip function is best attached to the FontAwesome icons to provide the required functionality.
 
 ## Deployment
+For this project a combination of Repl-it~ and GitPod were originally used, then for the sake of speed, stability, and ease-of-use I moved over to Visual Studio Code for coding, and using the Source Code Management provider with git to synch (stage, commit, synch) my updates to GitHub.
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+I initially used Repl.it~ for testing and trialing new ideas and features, and GitHub/GitPod for the main stable development environment. I had issues with both Repl.it~ and GitPod which made development testing an annoyance. Repl.it~ freezes from time to time, and updates the development environment (losing connectivity) in mid-work. GitHub/GitPod can take several minutes in the worst instances to update the changes made to either HMTL or CSS files, and at times the preview didn't display the background image used for this project (worked in a separate tab).
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+Visual Studio Code is the development platform of choice from now on, together with GitHub for deployment and GitPages for publishing.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+I'm working off of the same main branch on GitHub, though I have a staging environment on DropBox for Visual Studio Code.
 
-git add .
-git commit -m "..."
-git push
-...
-enable GitPages
+When initially using Repl.it~ I did nothing beyond using the built-in features to save, deploy, and publish the website.
 
+When using GitHub/GitPod I performed the following steps:
+
+* Testing and Development
+	* In the terminal I ran: `python3 -m http.server` to start the web server.
+	* Clicked on Open Browser for port 8000 to view the web pages.
+	* The preview browser doesn't show the background image, though shows all the updates immediately.
+* Deployment
+	* In the terminal I ran:
+		* `git add .` to track all new and modified files from the working directory to the staging area.
+		* `git commit -m "Relevant text goes here..."` to save all staged changes, along with a brief description from the user, in a “commit” to the local repository.
+		* `git push` to push changes in the local repository to the GitHub.
+* Publishing
+	* [Project Repository](https://github.com/NaoiseGaffney/Professional-Training-Development)
+		* Click on Settings. Scroll down to GitHub Pages.
+		* Under Source click on the Select Source button, and select 'master branch'.
+		* After a couple of minutes a message above Source says the following: "Your site is published at https://naoisegaffney.github.io/Professional-Training-Development/".
+		* Click on the link to access the published website: [Professional Training and Development](https://naoisegaffney.github.io/Professional-Training-Development/)
+
+Local deployment is performed in Visual Studio Code to the local LiveServer Web Server.
 
 ## Credits
 ![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
