@@ -59,18 +59,62 @@ Balsamiq wireframes and mockups of the website (simplified views, and not comple
 ## Solution
 ### Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The website enables clients (corporate and individuals) and collaborators to view and book training and coaching opportunities to suit their training and development needs.
+
+The website provides the owner with a global on-line presence, and an ability to position and prove the value of the training and development services provided.
+
+The website provides multiple communication channels, enabling both direct and indirect communication between clients, collaborators, and owner.
  
 #### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+#####These features are shared across all web pages on the website:
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+- Right-top Hamburger-menu: allows users to select the most suitable training and development, and coaching opportunity by having them click on the hamburger-menu and susbequent menu choice (Home, Organisations, Individuals, Programmes).
+- Fixed footer - Professional Trainer and Coach: allows users to read my resumé to add to the websites credibility ("been there, done that, have the t-shirt") by clicking on the graduation-cap or text link or tool-tip.
+- Fixed footer - Copyright 2020 GaffCo Consulting: allwos users to navigate to my "training centre (home)" by clicking on the location-arrow or text link or tool-tip.
+- Fixed footer - Mobile (phone-call): allows users to call me on their mobile or via Skype for Business (if installed) to talk to me about training and development, and coaching, by clicking on the FontAwesome phone icon.
+- Fixed footer - WhatsApp (message): allows users to WhatsApp message me on their mobile or laptop/desktop (if installed) to message me about training and development, and coaching, by clicking on the FontAwesome WhatsApp icon.
+- Fixed footer - Email (message): allows users to Email me on their mobile or laptop/desktop (if mailto: is linked) to message me about training and development, and coaching, by clicking on the FontAwesome Email icon.
+- Fixed footer - LinkedIn (website --> message): allows users to send me a LinkedIn message about training and development, and coaching, by clicking on the FontAwesome LinkedIn icon.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+The Fixed footer FontAwesome icons zoom-in (transform: scale (1.5)) when hovered over, while also featuring a tool-tip (i[tool-tip]) to provide additional information. This is shared across all web pages on the website.
+
+#####These features are unique or different on the web pages across the website:
+
+The [Homepage: index.html](https://naoisegaffney.github.io/Professional-Training-Development/index.html) provides the following features:
+
+- Background image: Emotional image of success after a hard run - sets the tone of the website, "You too will be equally successful and elated after attending our courses!"
+- Motivational mission statement "Organisations Achieve Greater Value through Professionally Coached Employees" - sets the tone of the website stating of a fact, the real reason users are visiting this website.
+
+The [Organisations page: organisations.html](https://naoisegaffney.github.io/Professional-Training-Development/organisations.html) provides the following features:
+
+- Organisations: allows users to know they're on the Organisations page, and presents them with two menus, one for Professional Courses and the other for QQI Courses.
+	- Organisations H1 with FontAwesome fa-sitemap icon makes it clear on which page the user is on.
+	- Professional Courses Flex Div provides the relevant clickable course options.
+	- QQI Courses Flex Div provides the relevant clickable courses.
+- Clickable Course Links: allows users to view course details, dates, and training location, by clicking on each link/course item.
+- Course Modal: allows users to view course detials and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
+
+The [Individuals page: individuals.html](https://naoisegaffney.github.io/Professional-Training-Development/individuals.html) provides the following features:
+
+- Individuals: allows users to know they're on the Individuals page, and presents them with two menus, one for Professional Skills Coaching and the other for Specific Coaching Occasions.
+	- Individuals H1 with FontAwesome fa-user icon makes it clear on which page the user is on.
+	- Professional Skills Coaching Flex Div provides the relevant clickable course options.
+	- Specific Coaching Occasions Flex Div provides the relevant clickable courses.
+- Clickable Course Links: allows users to view course details, dates, and training location, by clicking on each link/course item.
+- Course Modal: allows users to view course detials and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
+
+The [Programmes page: programmes.html](https://naoisegaffney.github.io/Professional-Training-Development/programmes.html) provides the following features:
+
+- Individuals: allows users to know they're on the Individuals page, and presents them with two menus, one for Professional Skills Coaching and the other for Specific Coaching Occasions.
+	- Individuals H1 with FontAwesome fa-user icon makes it clear on which page the user is on.
+	- Professional Skills Coaching Flex Div provides the relevant clickable course options.
+	- Specific Coaching Occasions Flex Div provides the relevant clickable courses.
+- Clickable Course Links: allows users to view course details, dates, and training location, by clicking on each link/course item.
+- Course Modal: allows users to view course detials and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
 
 #### Features Left to Implement
-- Another feature idea
+- 'Book Now!' button function (JS) or --> Form (JS/Python 3).
+- Additonal depth of detail for each course, for example Planned Learning Outcomes.
 
 ## Technology
 
@@ -86,9 +130,11 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 		* Git to add, commit, and push the project files to GitHub.
 		* GitHub Pages turns GitHub Repositories into Websites.
 * [Visual Studio Code](https://code.visualstudio.com/)
-	* Code writing and staging. Went over to Visual Studio Code for improved coding ease, performance, and stability.
+	* Code writing and staging. Went over to Visual Studio Code for improved coding ease, performance, and stability (used Repl-it~ and GitHub first).
 * [Google Fonts: Raleway](https://fonts.googleapis.com/css?family=Raleway%7C&display=swap)
 	* Using this font in different sizes for all text.
+* [FontAweseome CDN](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css)
+	* Using FontAwesome font icons to add visual elements to key website features, making the website memorable and easier to navigate
 * [Pixabay Free Images: Mountains](https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg)
 	* Using this image as the background image througout the website.
 * [CSS Before and After pseudo elements explained - part two: the content property by Kevin Powell](https://www.youtube.com/watch?v=xoRbkm8XgfQ)
@@ -97,8 +143,8 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* Using the described hamburger menu function for my menu.
 * [Target Modal from W3Schools](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal)
 	* Using this modal function for my course details.
-
-## Impact
+* [Strong Black French Press Coffee](https://www.youtube.com/watch?v=st571DYYTR8)
+	* Keeps me alert and on-schedule; keeps me going through the night. This is the secret source of my programming-powers. :-)
 
 ## Testing
 
