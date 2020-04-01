@@ -290,9 +290,9 @@ Local deployment is performed in Visual Studio Code to the local LiveServer Web 
 ## Credits
 ![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
 
-![Code Institute Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/CodeInstituteLogo.png)
-
 GaffCo Consulting - [Naoise Gaffney: naoise.gaff.gaffney@gmail.com](mailto:naoise.gaff.gaffney@gmail.com)
+
+![Code Institute Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/CodeInstituteLogo.png)
 
 Code Institute Mentor - [GitHub: 5pence - Spencer Barriball](https://github.com/5pence)
 
