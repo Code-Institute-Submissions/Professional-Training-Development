@@ -167,6 +167,12 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* Using the described hamburger menu function for my menu.
 * [Target Modal from W3Schools](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal)
 	* Using this modal function for my course details.
+
+### General Knowledge and Hours of Reading
+* [Website: CSS Tricks](https://css-tricks.com/)
+	* A website on more than CSS, for example Articles, Videos, Almanac of CSS Features, Code Snippets, Newsletter, Jobs, and Guides all related to front-end web development. I get happily "distracted" by this site, always learning and testing new skills.
+* [Master CSS Grids](https://mozilladevelopers.github.io/playground/css-grid/)
+	* The best explanation, example, and walkthrough of CSS Grids I've yet to come across. It's simple, really.
 * [FREE Pro Git eBook by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
 	* Read parts of this eBook to better understand Git.
 
@@ -175,7 +181,7 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* Keeps me alert and on-schedule; keeps me going through the night. This is the secret source of my programming-powers. :-)
 
 ### Technological Design Decision
-The design decision is to rely on simple Flexbox and Grid Layouts, rather than relying on a framework such as Bootstrap 4, and still maintain a responsive web design. In future I may stick to solely to Grid with the `minmax()` function to ensure a responsive web design, or venture further into Bootstrap 4 territory.
+The design decision is to rely on simple Flexbox and Grid Layouts, rather than relying on a framework such as Bootstrap 4, and still maintain a responsive web design. In future I may stick solely to Grid with the `minmax()` function to ensure a responsive web design, or venture into Bootstrap 4 territory.
 
 ## Testing
 ### Manual Testing Technology
