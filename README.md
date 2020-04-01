@@ -53,6 +53,7 @@ There are three main actors/roles that use the services provided by the website:
 	* As an individual, I want to contact the owner (Naoise Gaffney) to discuss the details of the coaching opportunities so that I can improve my professional skills.
 
 The User Experience and Design MarkDown document covers the 5 planes in detail:
+
 [User Experience and Design MarkDown](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User%20Experience%20and%20Design.md)
 
 Balsamiq wireframes and mockups of the website (simplified views, and not complete representations):
