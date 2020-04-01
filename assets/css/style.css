@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|&display=swap');
 
-/* === Style Variables: Colours and Hamburger Menu-speed === */
+/* === WHY?
+':root' Make it easier to change colours and menu-speed later on.
+'*' To make sure I'm working off a "clean slate".
+'body' Provide a consistent font and colour experiennce throughout the website (look-and-feel).
+'.container' and 'showcase' creating a consistent look-and-feel.
+=== */
+
+/* --- Style Variables: Colours and Hamburger Menu-speed.--- */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
   --overlay-color: rgba(13, 110, 139 , 0.75); /* Same color used throughout, except for modal background. */
@@ -16,6 +23,7 @@
     box-sizing: border-box;
 }
 
+/* --- Using the Raleway font throughout the website as it suits the emotional look-and-feel I'm looking for. --- */
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
@@ -36,10 +44,13 @@ body {
   background: rgba(13, 110, 139 , 0.30); /* Make the white text easier to read over the background image. */
 }
 
+
+/* === WHY?
+Image elicits an emotion of success after a hard slog. "Feel-good" image = let me help you become equally successful and happy!
+=== */
+
 /* --- Background Image from Pixabay (free to use)
 https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg
-
-Images elicits and emotion of success after a hard slog. "Feel-good" image = let me help you become equally successful and happy!
 
 Elements: CONTENT and BACKGROUND set the "Professional Training and Development Success" feeling Background Image.
 The remaining elements ensure the image coveras the whole viewport and that the image is behind (z-index: -1) all other elements.
@@ -94,7 +105,12 @@ body {
 }
 
 
-/* === Section Styling === */
+/* === WHY?
+Section Styling
+'.section a', '.container', 'fixed-footer', and 'footer...' to create a consistent contact experience, and look-and-feel throughout the website.
+Create a clean look, that's easy to comprehend and use.
+=== */
+
 /* ---  Making the Navigation Links visible against the #999999 (grey) background of the Fixed Navigation --- */
 section a {
   color: #ffffff;
@@ -143,6 +159,11 @@ footer a i:hover {
     padding-left: 20px;
 }
 
+
+/* === WHY?
+Adding tool-tips to clarify the fixed-footer elements (and to show off a nifty and useful CSS 3 feature).
+=== */
+
 /* --- Tool-tip on Hover by Kevin Powell: https://www.youtube.com/watch?v=xoRbkm8XgfQ HTML <i ... tool-tip="Tool-tip Text" ... ></i> --- */
 i[tool-tip] {
     position: relative;
@@ -172,6 +193,11 @@ i[tool-tip]:hover::after {
 }
 
 
+/* === WHY?
+Initially planned to use the hamburger-menu only for mobile devices, and a standard fixed navigation-bar at the top.
+Using the hamburger-menu for all displays and devices is consistent, and gives the website a cleaner look, and makes navigation easier.
+=== */
+
 /* === MENU.CSS now incorporated into STYLE.CSS as it's easier to edit one file for certain functions and elements than two files. === */
 /* === Hamburger-menu Style based on https://www.youtube.com/watch?v=DZg6UfS5zYg by Traversy Media (HTML 5 and CSS 3, NO JavaScript)  === */
 
@@ -183,7 +209,7 @@ i[tool-tip]:hover::after {
   z-index: 1;
 }
 
-/* --- Hamburger-menu Checkbox Toggle Styling, ensuring it's fixed to the top right corner even if/when the page scrolls. It's on top of the  z-index: 2; emsure --- */
+/* --- Hamburger-menu Checkbox Toggle Styling, ensuring it's fixed to the top right corner even if/when the page scrolls. It's on top of the background, 'z-index: 2;' --- */
 .menu-wrap .toggler {
   position: absolute;
   top: 0;
@@ -294,6 +320,7 @@ i[tool-tip]:hover::after {
 }
 
 /* --- Center the menu on the page when open. HTML <div class="menu"> --> <div> <-- --- */
+/* 'transition: all 0.4s ease;' !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 .menu-wrap .menu > div {
   background: var(--overlay-color);
   width: 200%;
@@ -303,16 +330,15 @@ i[tool-tip]:hover::after {
   align-items: center;
   justify-content: center;
   transform: scale(0); /* Scaled down to zero when Hamburger-menu is not clicked. */ /* Uncomment this when styling the menu items, together with... */
-  /* transition: all 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
 
 /* --- Center the menu on the page when open. HTML <div class="menu"><div> --> <div> <-- --- */
+/* 'transition: opacity 0.4s ease;' !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0; /* Uncomment this when styling the menu items, together with... */
-  /* transition: opacity 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
 
 .menu-wrap .menu > div > div > ul > li {
@@ -323,12 +349,16 @@ i[tool-tip]:hover::after {
 }
 
 /* --- Menu Items: FontAwesome Icons and Text --- */
+/* 'transition: color 0.4s ease;' !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none; /* Remove underline in Links */
-  /* transition: color 0.4s ease; !! !! !! Removed as it causes an ugly artefact when intially opening the page. !! !! !! */
 }
 
+
+/* === WHY?
+Displays details without leaving the page, providing a clear and clean navigation option.
+=== */
 
 /* === Course Details Upon Click === */
 /* --- From https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal --- */
@@ -378,7 +408,7 @@ i[tool-tip]:hover::after {
   text-align: justify;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 4; /* Place on top of fixed footer and hamburger-menu */
+  z-index: 4; /* Place on top of fixed footer and hamburger-menu. Means it's scrollable and visible over all other layers. */
 
   /* Add animation */
   -webkit-animation-name: example; /* Chrome, Safari, Opera */
