@@ -35,7 +35,7 @@ A website using HTML 5 and CSS 3 (in future JavaScript too) is an appropriate co
 ### Why are We So Special?
 GaffCo Consulting Professional Communication Competence provides client knowledge, skills, and attitude (comfort and confidence) to perform at a higher professionally standard than previously.
 
-This website proovides clear options, credibility (programmes and resumé), and numerous ways to get-in-touch.
+This website provides clear options, credibility (programmes and resumé), and numerous ways to get-in-touch.
 
 ### Technology Considerations?
 The website is built with business people and professional individuals in mind. It's easily accessible and read on anything from the smallest mobile devices to the largest laptop and desktop displays = Responsive Web Design.
@@ -65,40 +65,80 @@ For this initial sprint I'm concentrating on creating:
 ![First Sprint Items](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/First%20Sprint%20Items.png)
 
 ## Scope
-Functional Specification (Tasks): The Feature Set
-Content Requirements (Information): What is required to provide value?
-
-Strategy --> Scope and Business Objectives --> Requirements
-![Scope: Scenario --> Requirements](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Scope.png)
+* Useful: Is it useful to clients? Is it useful to us?
+	* Yes, on both accounts.
+		* Clients and collaborators see the value provided in terms of a broad range of Training and Development and Coaching opportunities.
+		* This enables me to reach a broader and global clientele that I would struggle to reach without an Internet presence such as this website.
+* Sellable: Could we sell this if we had it?
+	* Yes, all courses and coaching are available now.
+* Buildable: Can we build this, affordably?
+	* Yes, using HTML 5 and CSS 3. All the content is readily available.
 
 ### Functional Requirements
+The Scenarios to Requirements:
+
+![Scope: Scenario --> Requirements](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Scope.png)
+
 ### Content Requirements
+One background image to create an emotional response, together with a motivational message. Icons to support the text elements, for navigation, and for contact. Text to describe the courses, programmes, and coaching.
 
 ## Structure
-Interaction Design (Tasks): Patterns and sequences that provide options to the user
-Information Design (Information): Organisation, arrangement, and priority of content
-"Providing Structure to the Scope."
+The website structure is a hierarchical one, with a simple and predictable structure. Navigating from one page to another is done via the hamburger-menu on the top-right corner. It's the only way to navigate the website.
+
 ### Interaction Design
+* The homepage (index.html) has an exciting background image and motivational message. On the top-right corner is the hamburger-bar for navigating the website, and the fixed footer at the bottom has FontAwesome icon links (occasional text) for resumé, location, and contact (social links). The `<section>` is scrollable when there is too much text to fit on the one page.
+* Navigating from the homepage (index.html) is done via the hamburger-menu on the top-right corner.
+	* A user clicks on one of the menu items
+		* Home (index.html)
+		* Organisations (organisations.html)
+		* Individuals (individuals.html)
+		* Programmes (programmes.html)
+* On any of the 3 pages (Organisations, Individuals, and Programmes):
+	* Two boxes with course, coaching, or programme opportunities are presented. Clicking on any one of the course links will provide a modal (pop-up) with additional details, links to Google Calendar, Google Maps, a closure 'x', and a 'Book Now!' button.
+* The fixed footer provides access to the FontAwesome icon links (occasional text) for resumé, location, and contact (social links). The links zoom-in (`transform: scale(1.5);`) during hover, and also provide a tool-tip with additional information.
+
 ### Information Design
+Information Architecture: Hierarchical
+
+![Information Architecture](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Information%20Architecture.png)
 
 ## Skeleton
 Interface Design: The best arrangement and visual presentation of the elements
 Navigation Design: Intuitive navigation and completion of tasks
 Information Design: Skeleton Layout (Mock-up)
+
 ### Interface Design
+The website shares a common and recognisable look-and-feel, with the same background image, hamburger-menu, fixed footer with links, and colour scheme.
+
+The fixed footer elements are easily recognisable and understood, even more so thanks to the tool-tip on hover.
+
+Navigating is easy, there's only one simple choice, the top-right hamburger-menu.
+
 ### Navigation Design
+Internal website navigation is provided by the top-right hamburger-menu and is a feature across the website.
+
+External navigation, such as for the links on the fixed footer at the bottom of all pages, open up in new tabs (`target="_blank"`) or relevant applications associated to the functions.
+
 ### Information Design
+Wireframe Diagrams:
+
+![Homepage: index.html](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Training%20and%20Development%20Services.png)
+
+![Organisations: organisations.html](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Organisations.png)
+
+![Individuals: individuals.html](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Individuals.png)
+
+![Programmes: programmes.html](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Programmes.png)
 
 ## Surface
-Visual Design (Tasks and Information):
-Colours, typography effects, imagery
-Reinforce the meaning of content
-Guide the user through tasks and information
-Minimize cognitive overload and maximize intuitive learning
-Appropriate content
-
-= Final Design
 ### Visual Design
+"Organisations Achieve Greater Value through Professionally Coached Employees" - GaffCo Consulting Professional Communication Competence
+
+[Professional Training and Development](https://naoisegaffney.github.io/Professional-Training-Development/index.html)
+
+![Screenshot of the main page (index.html)](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/Screenshot%202020-03-30%2000.46.02.png)
+
+A responsive website using only HTML 5 and CSS 3 to provide Training and Development and Coaching opportunities to organisations and individuals.
 
 ## Acknowledgements
 * [FREE PDF: Elements of User Experience Design by Jesse James Garrett (second edition 2010)](https://www.academia.edu/33276128/The_Elements_of_User_Experience_-_Jesse_James_Garrett)
