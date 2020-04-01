@@ -68,7 +68,9 @@ The website provides the owner with a global on-line presence, and an ability to
 The website provides multiple communication channels, enabling both direct and indirect communication between clients, collaborators, and owner.
 
 This is a layered website making use of 3 dimensions (x, y, z). The background image or colour in the Safari browser is at the bottom (`z-index: -1`). The fixed footer is on top of the background and scrollable text. The hamburger-menu and menu items are on top of the background and fixed footer (`z-index: 1` and `z-index: 2`). The course detail modal is on top of everything, closest to the user (`z-index: 4`).
- 
+
+[User Walkthrough Video - an Overview](https://youtu.be/YxqJtqwyjEs)
+
 #### Existing Features
 These features are shared across all web pages on the website:
 
@@ -188,9 +190,9 @@ The design decision is to rely on simple Flexbox and Grid Layouts, rather than r
 The following combination of software and hardware is used for all tests:
 
 * Chrome on MacOSX (MacBook Pro) for both laptop/large display and mobile devices (inspect --> responsive).
-* FireFox Developer Edition on MacOSX (MacBook Pro) for both laptop/large displays and mobile devices (Web Developer Tools --> Responsive Design Mode).
+* Firefox Developer Edition on MacOSX (MacBook Pro) for both laptop/large displays and mobile devices (Web Developer Tools --> Responsive Design Mode).
 * Safari on MacOSX (MacBook Pro) for laptop/large display testing.
-* Physical devices: Samsung Galaxy Note 10+ 5G with Chrome, Samsung Browser and FireFox. Apple iPhone 8 with Chrome and Safari.
+* Physical devices: Samsung Galaxy Note 10+ 5G with Chrome, Samsung Browser and Firefox. Apple iPhone 8 with Chrome and Safari.
 
 ### Manual Testing Criteria
 The Acceptance Criteria are a compressed (simplified) version of the Use Cases described under section Processes --> UX:
@@ -273,7 +275,7 @@ I'm working off of the same main branch on GitHub, though I have a staging envir
 
 When initially using Repl.it~ I did nothing beyond using the built-in features to save, deploy, and publish the website.
 
-When using GitHub/GitPod I performed the following steps:
+When using GitHub/GitPod I perform the following steps:
 
 * Testing and Development
 	* In the terminal I ran: `python3 -m http.server` to start the web server.
@@ -292,6 +294,30 @@ When using GitHub/GitPod I performed the following steps:
 		* Click on the link to access the published website: [Professional Training and Development](https://naoisegaffney.github.io/Professional-Training-Development/)
 
 Local deployment is performed in Visual Studio Code to the local LiveServer Web Server.
+
+When using Visual Studio Code with GitHub I perform the following steps:
+
+* Testing and Development
+	* As I work in Visual Studio Code and make changes in any code, as soon as I save the changes the LiveServer Web Server automatically updates the browser to show the changes.
+	* I use separate versions for testing and development.
+		* Testing consists of trying new features and functions as snippets first, then in the current code, and when all works well the code is transferred to my main development environment.
+* Deployment
+	* To track all new and modified files from the working directory to the staging area.
+		* Click on Source Control (branch-icon on the left of the screen).
+		* Click on More Actions... (...) and click on 'Stage All Changes'
+	* To save all staged changes, along with a brief description from the user, in a “commit” to the local repository.
+		* Click on Source Control (branch-icon on the left of the screen).
+		* Click on More Actions... (...) and click on 'Commit All'
+		* Enter a short description in the text box and press Enter.
+	* To push changes in the local repository to the GitHub.
+		* Click on Source Control (branch-icon on the left of the screen).
+		* Click on More Actions... (...) and click on 'Commit All'
+* Publishing
+	* Go to (click on link) [Project Repository](https://github.com/NaoiseGaffney/Professional-Training-Development)
+		* Click on Settings. Scroll down to GitHub Pages.
+		* Under Source click on the Select Source button, and select 'master branch'.
+		* After a couple of minutes a message above Source says the following: "Your site is published at https://naoisegaffney.github.io/Professional-Training-Development/".
+		* Click on the link to access the published website: [Professional Training and Development](https://naoisegaffney.github.io/Professional-Training-Development/)
 
 ## Credits
 ![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
