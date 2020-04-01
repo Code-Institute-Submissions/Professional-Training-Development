@@ -17,7 +17,7 @@ Clients can book anything from single courses to fully bespoke programmes to sui
 ### Site Owner's Goals
 As the programme owner, I position my value and skills, as well as provide examples of programmes that I can provide to clients.
 
-This enables me to reach a broader and global clientele that I would struggle to reach without an Internet presence such as this website—extending my client base offering something specific that may not resonate as well on a platform such as Facebook or Twitter.
+This enables me to reach a broader and global clientele that I would struggle to reach without an Internet presence such as this website, extending my client base offering something specific that may not resonate as well on a platform such as Facebook or Twitter.
 
 ### Potential Features
 Display a selection of courses, programmes, and coaching for organisations and individuals.
@@ -51,6 +51,9 @@ There are three main actors/roles that use the services provided by the website:
 	* As an individual, I want to view the coaching opportunities provided by GaffCo Consulting so that I can improve my professional skills.
 	* As an individual, I want to book the relevant coaching opportunities provided by GaffCo Consulting so that I can improve my professional skills.
 	* As an individual, I want to contact the owner (Naoise Gaffney) to discuss the details of the coaching opportunities so that I can improve my professional skills.
+
+The User Experience and Design MarkDown document covers the 5 planes in detail:
+[User Experience and Design MarkDown](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/User%20Experience%20and%20Design.md)
 
 Balsamiq wireframes and mockups of the website (simplified views, and not complete representations):
 
@@ -175,8 +178,10 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* A website on more than CSS, for example Articles, Videos, Almanac of CSS Features, Code Snippets, Newsletter, Jobs, and Guides all related to front-end web development. I get happily "distracted" by this site, always learning and testing new skills.
 * [Master CSS Grids](https://mozilladevelopers.github.io/playground/css-grid/)
 	* The best explanation, example, and walkthrough of CSS Grids I've yet to come across. It's simple, really.
-* [FREE Pro Git eBook by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
+* [FREE: Pro Git eBook by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
 	* Read parts of this eBook to better understand Git.
+* [FREE PDF: Elements of User Experience Design by Jesse James Garrett (second edition 2010)](https://www.academia.edu/33276128/The_Elements_of_User_Experience_-_Jesse_James_Garrett)
+	* User experience design makes sure the aesthetic and functional aspects of an element works in the context of the rest of the website.
 
 ### Elixir of Life
 * [Strong Black French Press Coffee](https://www.youtube.com/watch?v=st571DYYTR8)
@@ -193,6 +198,8 @@ The following combination of software and hardware is used for all tests:
 * Firefox Developer Edition on MacOSX (MacBook Pro) for both laptop/large displays and mobile devices (Web Developer Tools --> Responsive Design Mode).
 * Safari on MacOSX (MacBook Pro) for laptop/large display testing.
 * Physical devices: Samsung Galaxy Note 10+ 5G with Chrome, Samsung Browser and Firefox. Apple iPhone 8 with Chrome and Safari.
+
+[Test Case Walkthrough Video - A Summary](https://youtu.be/w1bz3HG6KsE)
 
 ### Manual Testing Criteria
 The Acceptance Criteria are a compressed (simplified) version of the Use Cases described under section Processes --> UX:
@@ -343,7 +350,7 @@ The inspiration for the project comes from my current role as a Trainer, Facilit
 
 This is my first milestone project for the Diploma in Full Stack Development at the Code Institute, User Centric Frontend Development Milestone Project, using only HTML 5 and CSS 3. It's optional to use a framework such as Bootstrap 4. I've opted for a simpler approach using Flexbox and Grid Layout. It aids in cementing the fundamentals in HTML 5 and CSS 3.
 
-Please see the Technology section for detailed attributions regarding CSS features and functions that I've used from numerous knowledgeable and skilled individuals and organisations. All code, HTML and CSS contains ample comments with attributions to the above-mentioned sources.
+Please see the Technology section for detailed attributions regarding CSS features and functions that I've used from numerous knowledgeable and skilled individuals and organisations. All code, HTML and CSS contains ample comments with attributions to the above-mentioned sources. All QQI Course Aims are copied from [Quality and Qualifications Ireland](https://www.qqi.ie/) course descriptions.
 
 The Diploma in Full Stack Development provides a great foundation of tools and technologies used to work as a professional developer. It's a case of being a Jack-of-All-Trades, and a Master of None (or Some). It's up to each developer to expand upon the knowledge and skills acquired during the course through additional self-study of elements covered as a part of the course as well as other frameworks, languages, tools, methodologies,  processes, and solutions. This milestone project gave me the opportunity to solidify my new knowledge on layout using Flexbox and Grid, styling using CSS 3, and new cool CSS features such as:
 
