@@ -24,7 +24,7 @@ Display a selection of courses, programmes, and coaching for organisations and i
 
 View existing and bespoke courses, programmes and coaching opportunities for organisations and individuals.
 
-Check next course dates and available times, and find the "course centre" (currently my home).
+Check next course dates and available times, and find the "training centre" (currently my home).
 
 Book courses (yet to be implemented using JavaScript and Python 3). Courses are currently booked via the footer middle links (Mobile, WhatsApp, Email, LinkedIn, YouTube).
 
@@ -67,20 +67,20 @@ The website provides the owner with a global on-line presence, and an ability to
 
 The website provides multiple communication channels, enabling both direct and indirect communication between clients, collaborators, and owner.
 
-This is a layered website making use of 3 dimensions (x, y, z). The background image or colour in the Safari browser is at the bottom (z-index: -1). The fixed footer is on top of the background and scrollable text. The hamburger-menu and menu items are on top of the background and fixed footer (z-index: 1 and 2). The course detail modal is on top of everything, closest to the user (z-index: 4).
+This is a layered website making use of 3 dimensions (x, y, z). The background image or colour in the Safari browser is at the bottom (`z-index: -1`). The fixed footer is on top of the background and scrollable text. The hamburger-menu and menu items are on top of the background and fixed footer (`z-index: 1` and `z-index: 2`). The course detail modal is on top of everything, closest to the user (`z-index: 4`).
  
 #### Existing Features
 These features are shared across all web pages on the website:
 
 - Right-top Hamburger-menu: allows users to select the most suitable training and development, and coaching opportunity by having them click on the hamburger-menu and subsequent menu choice (Home, Organisations, Individuals, Programmes).
-- Fixed footer - Professional Trainer and Coach: allows users to read my resumé to add to the websites credibility ("been there, done that, have the t-shirt") by clicking on the graduation-cap or text link or tool-tip.
+- Fixed footer - Professional Trainer and Coach: allows users to read my resumé to add to the websites credibility ("been there, done that, and have the t-shirt") by clicking on the graduation-cap or text link or tool-tip.
 - Fixed footer - Copyright 2020 GaffCo Consulting: allows users to navigate to my "training centre (home)" by clicking on the location-arrow or text link or tool-tip.
 - Fixed footer - Mobile (phone-call): allows users to call me on their mobile or via Skype for Business (if installed) to talk to me about training and development, and coaching, by clicking on the FontAwesome phone icon.
 - Fixed footer - WhatsApp (message): allows users to WhatsApp message me on their mobile or laptop/desktop (if installed) to message me about training and development, and coaching, by clicking on the FontAwesome WhatsApp icon.
 - Fixed footer - Email (message): allows users to Email me on their mobile or laptop/desktop (if mailto: is linked) to message me about training and development, and coaching, by clicking on the FontAwesome Email icon.
 - Fixed footer - LinkedIn (website --> message): allows users to send me a LinkedIn message about training and development, and coaching, by clicking on the FontAwesome LinkedIn icon.
 
-The Fixed footer FontAwesome icons zoom-in (transform: scale (1.5)) when hovered over, while also featuring a tool-tip (i[tool-tip]) to provide additional information. This is shared across all web pages on the website.
+The Fixed footer FontAwesome icons zoom-in (`transform: scale (1.5)`) when hovered over, while also featuring a tool-tip (`i[tool-tip]`) to provide additional information. This is shared across all web pages on the website.
 
 These features are unique or different on the web pages across the website:
 
@@ -91,25 +91,25 @@ The [Homepage: index.html](https://naoisegaffney.github.io/Professional-Training
 
 The [Organisations page: organisations.html](https://naoisegaffney.github.io/Professional-Training-Development/organisations.html) provides the following features:
 
-- Organisations: allows users to know they're on the Organisations page, and presents them with two menus, one for Professional Courses and the other for QQI Courses.
+- Organisations: allow users to know they're on the Organisations page, and presents them with two menus, one for Professional Courses and the other for QQI Courses.
 	- Organisations H1 with FontAwesome fa-sitemap icon makes it clear on which page the user is on.
 	- Professional Courses Flex Div provides the relevant clickable course options.
 	- QQI Courses Flex Div provides the relevant clickable courses.
 - Clickable Course Links: allows users to view course details, dates, and training location, by clicking on each link/course item.
-- Course Modal: allows users to view course detials and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
+- Course Modal: allows users to view course details and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
 
 The [Individuals page: individuals.html](https://naoisegaffney.github.io/Professional-Training-Development/individuals.html) provides the following features:
 
-- Individuals: allows users to know they're on the Individuals page, and presents them with two menus, one for Professional Skills Coaching and the other for Specific Coaching Occasions.
+- Individuals: allow users to know they're on the Individuals page, and presents them with two menus, one for Professional Skills Coaching and the other for Specific Coaching Occasions.
 	- Individuals H1 with FontAwesome fa-user icon makes it clear on which page the user is on.
 	- Professional Skills Coaching Flex Div provides the relevant clickable course options.
 	- Specific Coaching Occasions Flex Div provides the relevant clickable courses.
 - Clickable Course Links: allows users to view course details, dates, and training location, by clicking on each link/course item.
-- Course Modal: allows users to view course detials and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
+- Course Modal: allows users to view course details and either book a course or close the modal by clicking on the 'Book Now!' button or the closing 'x'.
 
 The [Programmes page: programmes.html](https://naoisegaffney.github.io/Professional-Training-Development/programmes.html) provides the following features:
 
-- Individuals: allows users to know they're on the Individuals page, and presents them with two menus, one for Professional Skills Coaching and the other for Specific Coaching Occasions.
+- Individuals: allow users to know they're on the Individuals page, and presents them with two menus, one for Professional Skills Coaching and the other for Specific Coaching Occasions.
 	- Individuals H1 with FontAwesome fa-user icon makes it clear on which page the user is on.
 	- Professional Skills Coaching Flex Div provides the relevant clickable course options.
 	- Specific Coaching Occasions Flex Div provides the relevant clickable courses.
@@ -120,17 +120,20 @@ The [Programmes page: programmes.html](https://naoisegaffney.github.io/Professio
 - 'Book Now!' button function (JS) or --> Form (JS/Python 3).
 - Additional depth of detail for each course, for example Planned Learning Outcomes.
 - Client, Collaborator, and Individual Testimonials to increase credibility and trust.
-- Blog/Vlog to sell visions, ideas, possibilites of value to the users, with examples of course and coaching work (2 to 3-minute snippets).
-- The design decision is to rely on simple Flexbox and Grid Layouts, rather than relying on a framework such as Bootstrap 4, and still maintain a responsive web design. In future I may stick to solely to Grid with the minmax() function to ensure a responsive web design, or venture further into Bootstrap 4 territory. I've left the Grid layout defined in style.css as-is for future additions.
+- Blog/Vlog to sell visions, ideas, possibilities of value to the users, with examples of course and coaching work (2 to 3-minute snippets).
+- The design decision is to rely on simple Flexbox and Grid Layouts, rather than relying on a framework such as Bootstrap 4, and still maintain a responsive web design. In future I may stick to solely to Grid with the `minmax()` function to ensure a responsive web design, or venture further into Bootstrap 4 territory. I've left the Grid layout defined in style.css as-is for future additions.
 
 ## Technology
 
 A list of the languages, frameworks, libraries, and other tools used for this project.
 
+### Code:
 * [HTML 5.2. - W3C Recommendation, 14 December 2017](https://www.w3.org/TR/html52/)
 	* The project uses HTML 5 to create the content.
 * [CSS 3 CSS - Snapshot 2018 W3C Working Group Note, 22 January 2019](https://www.w3.org/TR/css-2018/)
 	* The project uses CSS 3 to style the content and provide the layout.
+
+### Development and Staging Platforms and Environments
 * [GitHub / GitPod /Git / GitHub Pages](https://github.com/)
 	* The project uses GitHub:
 		* GitPod to create and edit the project files (HTML 5 and CSS 3).
@@ -144,14 +147,18 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* Code writing and staging. Went over to Visual Studio Code for improved coding ease, performance, and stability (used Repl-it~ and GitHub first).
 * [LiveServer for Visual Code Studio](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 	* This is the local Web Server used for development and testing, running as an add-on to Visual Studio Code.
+
+### Documentation Tools
 * [MacDown](https://macdown.uranusjr.com/)
 	* Using this application to write this documentation in MarkDown.
 * [Balsamiq](https://balsamiq.com/)
 	* Using this application to create website wireframes and mockups.
+
+### Acknowledgements and Attributions of Used Features and Functions
 * [Google Fonts: Raleway](https://fonts.googleapis.com/css?family=Raleway%7C&display=swap)
 	* Using this font in different sizes for all text.
 * [FontAwesome CDN](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css)
-	* Using FontAwesome font icons to add visual elements to key website features, making the website memorable and easier to navigate
+	* Using FontAwesome font icons to add visual elements to key website features, making the website memorable and easier to navigate.
 * [Pixabay Free Images: Mountains](https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg)
 	* Using this image as the background image throughout the website.
 * [CSS Before and After pseudo elements explained - part two: the content property by Kevin Powell](https://www.youtube.com/watch?v=xoRbkm8XgfQ)
@@ -162,10 +169,13 @@ A list of the languages, frameworks, libraries, and other tools used for this pr
 	* Using this modal function for my course details.
 * [FREE Pro Git eBook by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
 	* Read parts of this eBook to better understand Git.
+
+### Elixir of Life
 * [Strong Black French Press Coffee](https://www.youtube.com/watch?v=st571DYYTR8)
 	* Keeps me alert and on-schedule; keeps me going through the night. This is the secret source of my programming-powers. :-)
 
-The design decision is to rely on simple Flexbox and Grid Layouts, rather than relying on a framework such as Bootstrap 4, and still maintain a responsive web design. In future I may stick to solely to Grid with the minmax() function to ensure a responsive web design, or venture further into Bootstrap 4 territory.
+### Technological Design Decision
+The design decision is to rely on simple Flexbox and Grid Layouts, rather than relying on a framework such as Bootstrap 4, and still maintain a responsive web design. In future I may stick to solely to Grid with the `minmax()` function to ensure a responsive web design, or venture further into Bootstrap 4 territory.
 
 ## Testing
 ### Manual Testing Technology
@@ -231,7 +241,7 @@ A couple of things to note:
 
 * Safari does not support background images which is why a background colour is defined instead.
 * On the smallest devices (Galaxy S5 and Apple iPhone 5) some of the course menus (Flex Div) slide under the fixed footer, meaning that the only way to click on the bottom-most course detail is to do so in portrait-mode.
-* The course detail modal is set to 'z-index: 4' to lie on top of the fixed footer and hamburger-menu. As the footer is fixed the course detail modal is scrollable to allow the user to read all the information and click on all the icons and buttons.
+* The course detail modal is set to `z-index: 4` to lie on top of the fixed footer and hamburger-menu. As the footer is fixed the course detail modal is scrollable to allow the user to read all the information and click on all the icons and buttons.
 
 ### HTML and CSS Validation: [Nu HTML and CSS Checker](https://validator.w3.org/nu/)
 
@@ -280,25 +290,40 @@ Local deployment is performed in Visual Studio Code to the local LiveServer Web 
 ## Credits
 ![GaffCo Consulting Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/GaffCo%20-%20Background.png)
 
+![Code Institute Logo](https://github.com/NaoiseGaffney/Professional-Training-Development/blob/master/docs/CodeInstituteLogo.png)
+
+GaffCo Consulting - [Naoise Gaffney: naoise.gaff.gaffney@gmail.com](mailto:naoise.gaff.gaffney@gmail.com)
+
+Code Institute Mentor - [GitHub: 5pence - Spencer Barriball](https://github.com/5pence)
+
 ### Content
-- GitHub Pages: [https://naoisegaffney.github.io/Resume/index.html](https://naoisegaffney.github.io/Resume/index.html)
+- [GitHub: Project Repository](https://github.com/NaoiseGaffney/Professional-Training-Development)
+- [Website: Professional Training and Development](https://naoisegaffney.github.io/Professional-Training-Development/)
 
 ### Media
-- The photos used in this site were obtained from ...
+* [Pixabay Free Images: Mountains](https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_1280.jpg)
+	* Using this image as the background image throughout the website.
+* [FontAwesome CDN](https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css)
+	* Using FontAwesome font icons to add visual elements to key website features, making the website memorable and easier to navigate.
 
 ### Acknowledgements
+The inspiration for the project comes from my current role as a Trainer, Facilitator, and Coach. I need an on-line presence with an ability to position and prove my valuable services to clients and collaborators.
 
-I received inspiration for this project from X
-Static front end project: Write custom HTML5 and CSS3 code to create a website of at least 3 pages, or (if using a single scrolling page), at least 3 separate page areas.
+This is my first milestone project for the Diploma in Full Stack Development at the Code Institute, User Centric Frontend Development Milestone Project, using only HTML 5 and CSS 3. It's optional to use a framework such as Bootstrap 4. I've opted for a simpler approach using Flexbox and Grid Layout. It aids in cementing the fundamentals in HTML 5 and CSS 3.
 
-Information Architecture: Incorporate a main navigation menu and structured layout (you might want to use Bootstrap to accomplish this).
+Please see the Technology section for detailed attributions regarding CSS features and functions that I've used from numerous knowledgeable and skilled individuals and organisations. All code, HTML and CSS contains ample comments with attributions to the above-mentioned sources.
 
-Documentation: Write a README.md file for your project that explains what the project does and the value that it provides to its users.
+The Diploma in Full Stack Development provides a great foundation of tools and technologies used to work as a professional developer. It's a case of being a Jack-of-All-Trades, and a Master of None (or Some). It's up to each developer to expand upon the knowledge and skills acquired during the course through additional self-study of elements covered as a part of the course as well as other frameworks, languages, tools, methodologies,  processes, and solutions. This milestone project gave me the opportunity to solidify my new knowledge on layout using Flexbox and Grid, styling using CSS 3, and new cool CSS features such as:
 
-Version Control: Use Git & GitHub for version control.
+* [CSS Before and After pseudo elements explained - part two: the content property by Kevin Powell](https://www.youtube.com/watch?v=xoRbkm8XgfQ)
+	* Using the hover tool-tip function for the fixed footer FontAwesome icons: resumé, social and contact links, and location.
+* [Pure CSS Hamburger Menu & Overlay by Traversy Media](https://www.youtube.com/watch?v=DZg6UfS5zYg)
+	* Using the described hamburger menu function for my menu.
+* [Target Modal from W3Schools](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal)
+	* Using this modal function for my course details.
 
-Attribution: Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
+Thank you Kevin Powell, Bill Traversy, and W3Schools for giving me opportunities to expand my knowledge and skills in CSS 3!
 
-Deployment: Deploy the final version of your code to a hosting platform such as GitHub Pages.
+Thank you Code Institute for allowing me on this journey in life!
 
-[mailto:naoise.gaff.gaffney@gmail.com](mailto:naoise.gaff.gaffney@gmail.com)
+Thank you Spencer Barriball for your unwavering support!
